@@ -8,8 +8,9 @@ import os
 import io
 
 # ---------------- CONFIG ----------------
-MODEL_PATH  = "saved_model/mobilenet_articleType"  # SavedModel folder
+MODEL_PATH = "saved_model/mobilenet_articleType"
 LABELS_PATH = "saved_model/articleType_labels.json"
+
 IMG_SIZE = (160, 160)
 
 # ---------------- LOAD MODEL & LABELS ----------------
@@ -61,3 +62,4 @@ if uploaded:
     for label, p in top_rows:
         st.write(f"**{label}** — {p*100:.1f}%")
         st.progress(float(p))
+
