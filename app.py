@@ -4,7 +4,7 @@ from PIL import Image
 import io, os
 
 # ================== CONFIG ==================
-OUT_DIR     = r"E:\hamza\freelancing_project\CNN_cloathing_project\saved_model"
+OUT_DIR     = "saved_model"
 MODEL_PATH  = os.path.join(OUT_DIR, "mobilenet_articleType.h5")
 LABELS_PATH = os.path.join(OUT_DIR, "articleType_labels.json")
 IMG_SIZE    = (160,160)
@@ -58,3 +58,4 @@ if uploaded:
     for label, p in top_rows:
         st.write(f"**{label}** — {p*100:.1f}%")
         st.progress(float(p))
+
