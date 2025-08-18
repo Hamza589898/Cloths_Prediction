@@ -1,2 +1,21 @@
 # Cloths_Prediction
-This demo showcases an AI-powered cataloging tool built with Streamlit. It predicts clothing and shoe attributes like pattern, fit, closure, type, and fastening, and also fills product details such as neck, occasion, and pack quantity from images. Deployed on Streamlit Cloud for easy client access.
+# AI Cataloging Demo
+
+This is a demo project showcasing an AI-powered cataloging tool for clothing, shoes, and accessories.
+
+## Features
+- Predicts clothing attributes: pattern, fit, closure
+- Generates titles using prints and existing titles
+- Shoe categorization: type & fastening
+- Fills extra attributes: neck, occasion, pack quantity
+
+## Tech Stack
+- Python
+- Streamlit
+- Computer Vision (Image Recognition Models)
+
+## How to Run
+1. Clone the repository
+   ```bash
+   git clone <repo_link>
+   cd ai-cataloging-demo
