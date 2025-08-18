@@ -30,6 +30,9 @@ def load_artifacts():
     idx_to_class = {int(k): v for k,v in idx_to_class.items()}
     return model, idx_to_class
 
+model, idx_to_class = load_artifacts()
+
+
 def preprocess_pil(pil_img):
     pil_img = pil_img.convert("RGB").resize(IMG_SIZE)
     arr = np.array(pil_img).astype("float32")
@@ -62,4 +65,5 @@ if uploaded:
     for label, p in top_rows:
         st.write(f"**{label}** — {p*100:.1f}%")
         st.progress(float(p))
+
 
